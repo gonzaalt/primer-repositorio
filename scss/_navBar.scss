@@ -1,0 +1,32 @@
+header{display: flex;}
+
+@media (min-width:768px){
+  header{
+flex-direction: row;
+}
+}
+
+.navList{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;}
+
+  @media (min-width:768px){
+    .navList{
+      flex-direction: row;
+    gap: 20px; 
+    text-align: end;
+    }
+   
+  }
+
+  a{text-decoration: none;
+    font-size: 2.5rem;
+  }
+
+  .logo{
+    width: 80px;
+  height: 80px;
+  }
