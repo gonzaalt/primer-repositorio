@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  background-color: #F76CCC;
+  background-color: #F76CCC !important;
 }
 
 .label {
@@ -17,20 +17,9 @@ input {
   transition: all 2s;
 }
 
-input:focus {
-  width: 200px;
-  font-size: 24px;
-}
-
 .logo {
   width: 80px;
   height: 80px;
-}
-
-.holaRosa {
-  color: #6CF797;
-  font-size: 1.7rem;
-  text-align: left;
 }
 
 img {
@@ -43,25 +32,26 @@ video {
   max-width: 100%;
 }
 
-.caja1__historia {
-  text-align: center;
-  font-size: 3rem;
-}
-
 .holaRosa {
   text-align: center;
   font-family: "Nunito", sans-serif;
+  color: #6CF797;
+  font-size: 1.7rem;
+  text-align: left;
 }
 
 .caja1__fotos {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 3fr 1fr;
   align-content: center;
   -o-object-fit: cover;
      object-fit: cover;
-  justify-content: space-between;
+  justify-content: center;
   margin: 3rem;
   padding: 2rem;
+  width: 100% !important;
+  text-align: center;
+  height: 100% !important;
 }
 
 .caja2 {
@@ -88,16 +78,6 @@ video {
   margin: auto;
 }
 
-@media (min-width: 768px) {
-  .pie {
-    display: flex;
-    flex-direction: row;
-    font-size: 3rem;
-    gap: 40px;
-    justify-content: center;
-    margin: 5px;
-  }
-}
 .pie {
   display: flex;
   flex-direction: row;
@@ -109,13 +89,9 @@ video {
 
 header {
   display: flex;
+  background-color: #F76CCC;
 }
 
-@media (min-width: 768px) {
-  header {
-    flex-direction: row;
-  }
-}
 .navBar__list {
   list-style: none;
   display: flex;
@@ -125,13 +101,6 @@ header {
   color: #6CF797;
 }
 
-@media (min-width: 768px) {
-  .navBar__list {
-    flex-direction: row;
-    gap: 20px;
-    text-align: end;
-  }
-}
 a {
   text-decoration: none;
   font-size: 2.5rem;
@@ -144,9 +113,30 @@ a {
   height: 80px;
 }
 
+.grillaServicios {
+  display: grid;
+  margin: 50px;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+}
+
+.cards {
+  display: grid;
+  padding: 20px;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  border: 1px solid;
+  border-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  box-shadow: 0px 2px 7px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
 .clienta {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: 1fr;
 }
 
@@ -155,7 +145,66 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
+
+  .grillaServicios {
+    display: grid;
+    margin: 50px;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+  }
+
+  .lead {
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+    font-size: 3rem;
+  }
+
+  .navBar__list {
+    flex-direction: row;
+    gap: 20px;
+    text-align: end;
+  }
+
+  header {
+    flex-direction: row;
+  }
+
+  .grillaServicios {
+    display: grid;
+    margin: 50px;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+  }
+
+  .pie {
+    display: flex;
+    flex-direction: row;
+    font-size: 3rem;
+    gap: 40px;
+    justify-content: center;
+    margin: 5px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+  }
+
+  .caja1__historia {
+    font-size: 4rem;
+  }
+
+  .caja2__lugar {
+    font-size: 4rem;
+  }
 }
+iframe {
+  width: 100%;
+  height: 600px;
+}
+
 .clienta:hover {
   transform: scale(1);
 }
@@ -179,6 +228,7 @@ a {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  max-height: 39rem;
 }
 
 .mapa {
@@ -186,4 +236,87 @@ a {
   font-size: 1.5rem;
   font-family: "Nunito", sans-serif;
   color: aliceblue;
+}
+
+.container-fluid {
+  background-color: #F76CCC;
+  text-align: center;
+}
+
+.navbar {
+  background-color: #F76CCC;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.cuerpo {
+  background-color: #F76CCC;
+}
+
+.container-fluid {
+  color: aqua !important;
+}
+
+.grillaServicios {
+  font-size: 4rem !important;
+}
+
+.clientas {
+  text-align: center;
+  font-size: 4rem;
+  margin: 3rem;
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.row {
+  height: 80%;
+  width: 80%;
+  align-items: center;
+  margin: auto;
+}
+
+.contacto {
+  text-align: center;
+  font-size: 4rem;
+  margin: 2rem;
+}
+
+.c1 {
+  font-size: 3rem;
+  margin: 2rem;
+  text-align: center;
+}
+
+.lead {
+  text-align: center;
+}
+
+#foto {
+  width: 360px;
+  height: 640px;
+}
+
+p {
+  font-family: "Nunito", sans-serif;
+}
+
+.piec {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  font-size: 3rem;
+  gap: 40px;
+  justify-content: center;
+  margin: 5px;
+  width: 100%;
+  background-image: linear-gradient(to right, #F76CCC, #6CF797);
 }/*# sourceMappingURL=styles.css.map */
