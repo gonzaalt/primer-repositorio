@@ -81,14 +81,7 @@ video {
 
 
 
-.pie {
-    display: flex;
-    flex-direction: row;
-    margin: 2rem;
-    width: 100%;
-    position: relative;
-    background-image: linear-gradient(to right, #F76CCC, #6CF797);
-}
+
 
 header {
     display: flex;
@@ -283,3 +276,13 @@ margin: 5px;
 width: 100%;
 background-image: linear-gradient(to right, #F76CCC, #6CF797);
 }
+
+.pie{
+    display: flex;
+    flex-direction: row;
+    font-size: 3rem;
+    gap: 40px;
+    justify-content: center;
+    margin: 5px;
+    width: 100%;
+    background-image: linear-gradient(to right, #F76CCC, #6CF797);}
